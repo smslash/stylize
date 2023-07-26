@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Art Web</title>
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Fira+Sans&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="title"><a class="custom" href="http://127.0.0.1:4000/">ASCII ART WEB</a></h1><br>
+
+            <div id="text" class="parent">
+                <form action="/ascii-art" method="post">
+                    <label for="fonts">Choose:</label>
+                    <select name="fonts" id="banner">
+                        <option value="Standard" selected>Standard</option>
+                        <option value="Shadow">Shadow</option>
+                        <option value="Thinkertoy">Thinkertoy</option>
+                    </select>
+                    <div class="button-row">
+                        <textarea name="convert"></textarea>
+                        &emsp;
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <br> 
+
+            <div id="output" class="parent">
+                <div id="outputtext"><b><pre>{{.}}</pre></b></div>
+            </div>
+            <br><br>
+            <button class="button button5" onclick="window.history.back()">BACK</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © 2023, <a class="custom-link" href="https://01.alem.school/git/ssengerb">@ssengerb</a> and <a class="custom-link" href="https://01.alem.school/git/aarmanul">@aarmanul</a></p>
+    </footer>
+
+</form>
+  
+</body>
+</html>
